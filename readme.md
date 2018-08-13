@@ -415,7 +415,18 @@
     * pending
     > 对应的Class： .ng-pristine .ng-dirty .ng-valid .ng-invalid .ng-touched
 
-
+### node 服务器
+1. npm init -y
+2. npm i @types/node --save // 类型定义文件
+3. Add "tsconfig.json" file
+4. npm install express --save
+5. npm install @ type/expess --save
+6. coding...
+7. node build/server.js
+8. npm install -g nodemon   // 自动重启项目工具
+9. nodemon build/server.js  // nodemon启动服务
+10. npm install ws --save   // ws依赖库
+11. npm install @ type/ws --save-dev
 
 
 
