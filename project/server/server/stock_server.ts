@@ -14,7 +14,7 @@ app.get('/api/stock', (req, res) => {
     let result = stocks;
     let params = req.query;
 
-    if(params.nam){
+    if(params.name){
         result = result.filter(stock => stock.name.indexOf(params.name) !== -1);
     }
 
@@ -25,7 +25,7 @@ app.get('/api/stock/:id', (req, res) => {
     res.json(stocks.find(stock => stock.id == req.params.id));
 });
 
-const server = app.listen(8086, 'localhost', () => {
+const server = app.listen(8000, 'localhost', () => {
     console.log('服务器已启动,地址是:http://localhost:8086');
 });
 
